@@ -1,0 +1,263 @@
+<?php
+// task18
+$name = "Sasha";
+
+// task19
+$age = 31;
+
+//task20
+echo "Меня зовут: {$name} \n";
+
+//task21
+echo "Мне {$age} лет \n";
+
+//task22
+if($age >= 18 && $age <=59 )
+{
+    echo "Вам еще работать и работать \n";
+}
+
+//task23
+$age = 71;
+if($age >= 18 && $age <=59 )
+{
+    echo "Вам еще работать и работать \n";
+} elseif ($age > 59)
+{
+    echo "Вам пора на пенсию \n";
+}
+
+//task24 
+$age = 11;
+if($age >= 18 && $age <=59 )
+{
+    echo "Вам еще работать и работать \n";
+} 
+    elseif ($age > 59)
+{
+    echo "Вам пора на пенсию \n";
+} 
+    elseif($age>=0 && $age<=17)
+{
+    echo "Вам еще рано работать \n";
+}
+
+//task25
+$age = 'hello';
+if ($age >= 18 && $age <=59)
+{
+    echo "Вам еще работать и работать \n";
+} 
+    elseif ($age > 59)
+{
+    echo "Вам пора на пенсию \n";
+} 
+    elseif($age > 0 && $age <= 17 )
+{
+    echo "Вам еще рано работать \n";
+}
+    else
+{
+    echo "Неизвестный возраст \n";
+}
+
+//task26
+$day = 2;
+
+//task27
+switch ($day)
+{
+    case 1:
+    case 2:
+    case 3:
+    case 4:
+    case 5:
+        echo "Это рабочий день \n";
+}
+
+//task28
+$day = 7;
+switch ($day)
+{
+    case 1:
+    case 2:
+    case 3:
+    case 4:
+    case 5:
+        echo "Это рабочий день \n";
+        break;
+    case 6:
+    case 7:
+        echo "Это выходной день \n";
+}   
+
+//task 29
+$day = 33;
+switch ($day)
+{
+    case 1:
+    case 2:
+    case 3:
+    case 4:
+    case 5:
+        echo "Это рабочий день \n";
+        break;
+    case 6:
+    case 7:
+        echo "Это выходной день \n";
+        break;
+    default:
+        echo "Неизвестный день \n";
+}   
+
+// task 30
+$s = 120;
+$t = 2;
+
+$speed_km_hour = $s / $t;
+$speed_m_sec = $speed_km_hour / 3.6;
+
+echo "speed in Km per hour = {$speed_km_hour} and speed in meter per second = {$speed_m_sec} \n";
+
+//task 31
+$foo = 'bar';
+$bar = 10;
+
+echo $$foo;
+
+// task 32
+$a = 4;
+$b = 3;
+$operator = '%';
+
+if ($operator === '+')
+{
+    echo "\n result {$a} {$operator} {$b} = ", $a + $b;
+};
+
+if ($operator === '-')
+{
+    echo "\n result  {$a} {$operator} {$b} = ", $a - $b;
+};
+
+if ($operator === '*')
+{
+    echo "\n result  {$a} {$operator} {$b} = ", $a * $b;
+};
+
+if ($operator === '/' && $b == 0)
+{
+    echo "\n division by zero";
+} elseif ($operator === '/' && $b !== 0)
+{
+    echo "\n result  {$a} {$operator} {$b} = ", $a / $b;
+};
+
+if ($operator === '%' && $b == 0)
+{
+    echo "\n division by zero";
+} elseif ($operator === '%' && $b !== 0)
+{
+    echo "\n result  {$a} {$operator} {$b} = ", $a % $b;
+};
+
+//task33
+$a = 4;
+$b = 2;
+$max = max($a, $b);
+echo "\n max of {$a} and {$b} is {$max} \n";
+
+//task34
+$a = '78';
+$b = 78;
+
+if( $a == $b)
+{
+    echo "equals \n";
+} else 
+{
+    echo "not equals \n";
+}
+
+// task35
+$a = '78';
+$b = 78;
+if( $a === $b)
+{
+    echo "equals \n";
+} else 
+{
+    echo "not equals \n";
+}
+
+//task36
+$a = '78';
+$b = 78;
+
+echo var_dump($a == $b);
+echo var_dump($a === $b);
+
+//task37
+$a = (bool)20;
+echo var_dump($a);
+// любое число кроме нуля будет TRUE
+
+//task38
+$a = 0;
+echo var_dump(!!$a);
+// ноль будет false
+
+//task39
+$a = (bool)-20;
+echo var_dump(!!$a);
+//как и любое число кроме нуля будет true
+
+// task40
+echo '1 строка';
+print_r('2 строка');
+print "3 строка \n";
+
+//task41
+/*commentary number 1*/
+//second
+# third
+
+//task42
+// просто короткая форма записи
+
+// task43
+const DAYS_COUNT = 7;
+define("MONTH_COUNT", "12");
+
+// task44
+// php my_script.php
+
+//task45
+$arr  = array('html', 'css', 'php', 'js', 'jq');
+foreach ($arr as $item)
+{
+    echo "$item \n";
+}
+
+//task46
+$arr_2 = array(1, 20, 15, 17, 24, 35);
+$result = 0;
+foreach ($arr_2 as $item) 
+{
+    $result += $item;
+}
+
+echo "$result \n";
+
+//task47
+$arr_3 = array(26, 17, 136, 12, 79, 15);
+$result = 0;
+foreach ($arr_3 as $item) 
+{
+    $result += $item * $item;
+}
+echo "$result \n";
+
+
+
+echo "\n";
