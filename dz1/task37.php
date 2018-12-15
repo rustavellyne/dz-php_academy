@@ -1,0 +1,10 @@
+<?php
+
+
+//task36
+$a = '78';
+$b = 78;
+
+echo var_dump($a == $b);
+echo var_dump($a === $b);
+
